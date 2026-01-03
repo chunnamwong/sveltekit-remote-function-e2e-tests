@@ -3,12 +3,15 @@
 An isolated, parallel E2E testing setup for a SvelteKit app using Remote Functions and Bun.
 Each test case runs against its **own dedicated PostgreSQL database**, so tests can run concurrently without cross-test interference.
 
+This repository also includes a **CI workflow** that runs the E2E suite automatically on every pull request.
+
 ## What this repo demonstrates
 
 - **Parallel E2E execution** without flaky shared state
 - **Per-test database isolation** (a fresh DB per test case)
-- A minimal SvelteKit app using **Remote Functions**
-- A test runner workflow powered by **Bun** and **Docker Compose**
+- A minimal SvelteKit app using [**Remote Functions**](https://svelte.dev/docs/kit/remote-functions)
+- A test runner workflow powered by [**Bun**](https://bun.sh/), [**Playwright**](https://playwright.dev/) and [**testcontainers**](https://testcontainers.com/)
+- **CI automation** to run the E2E tests in a clean environment
 
 ## Prerequisites
 
