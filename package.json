@@ -1,5 +1,5 @@
 {
-	"name": "sveltekit-remote-functions-parallel-e2e",
+	"name": "sveltekit-remote-functions-parallel-e2e-tests",
 	"description": "Isolated parallel E2E tests for a SvelteKit app using Remote Functions and Bun, with an independent PostgreSQL database per test case.",
 	"version": "0.0.1",
 	"type": "module",
@@ -20,7 +20,7 @@
 	"license": "MIT",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/chunnamwong/sveltekit-remote-function-e2e-tests.git"
+		"url": "git+https://github.com/chunnamwong/sveltekit-remote-functions-parallel-e2e-tests.git"
 	},
 	"scripts": {
 		"dev": "vite dev",
