@@ -2,7 +2,7 @@
 	import { getUserCount } from '$lib/users/data.remote';
 	import { resolve } from '$app/paths';
 
-	const userCount = $derived(await getUserCount());
+	const userCount = await getUserCount();
 </script>
 
 <a href={resolve('/users/register')}>User Register</a>

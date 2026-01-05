@@ -4,6 +4,9 @@
   "workspaces": {
     "": {
       "name": "sveltekit-remote-function-e2e-tests",
+      "dependencies": {
+        "valibot": "^1.2.0",
+      },
       "devDependencies": {
         "@eslint/compat": "^1.4.0",
         "@eslint/js": "^9.39.1",
@@ -26,7 +29,6 @@
         "testcontainers": "^11.11.0",
         "typescript": "^5.9.3",
         "typescript-eslint": "^8.48.1",
-        "valibot": "^1.2.0",
         "vite": "^7.2.6",
       },
     },

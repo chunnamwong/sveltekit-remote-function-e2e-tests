@@ -1,7 +1,7 @@
 import * as v from 'valibot';
 import { redirect, invalid } from '@sveltejs/kit';
 import { query, form } from '$app/server';
-import { sql } from '$lib/sql';
+import { sql } from 'bun';
 
 export const getUserCount = query(async () => {
 	const [{ count }] = await sql`SELECT COUNT(*) FROM users;`;
@@ -16,7 +16,7 @@ export const createUser = form(
 	async ({ username, password }, issue) => {
 		const [{ count }] = await sql`SELECT COUNT(*) FROM users WHERE username = ${username};`;
 
-		if (count !== 0n) {
+		if (count !== '0') {
 			invalid(issue.username('Username has been taken.'));
 		}
 

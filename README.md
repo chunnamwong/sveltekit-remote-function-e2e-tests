@@ -1,9 +1,11 @@
-# sveltekit-remote-function-e2e-tests
+# sveltekit-remote-functions-parallel-e2e
 
 An isolated, parallel E2E testing setup for a SvelteKit app using Remote Functions and Bun.
 Each test case runs against its **own dedicated PostgreSQL database**, so tests can run concurrently without cross-test interference.
 
 This repository also includes a **CI workflow** that runs the E2E suite automatically on every pull request.
+
+You can find a detailed blog post explaining the approach [here](https://chunnamwong.com/posts/en/sveltekit-remote-functions-parallel-e2e/).
 
 ## What this repo demonstrates
 
@@ -50,5 +52,5 @@ POSTGRES_URL=postgresql://postgres:postgres@localhost:5432/svelte
 ### Start the dev server
 
 ```sh
-bun run dev
+bun --bun run dev
 ```

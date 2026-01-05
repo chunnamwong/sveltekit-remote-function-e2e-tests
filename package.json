@@ -1,5 +1,5 @@
 {
-	"name": "sveltekit-remote-function-e2e-tests",
+	"name": "sveltekit-remote-functions-parallel-e2e",
 	"description": "Isolated parallel E2E tests for a SvelteKit app using Remote Functions and Bun, with an independent PostgreSQL database per test case.",
 	"version": "0.0.1",
 	"type": "module",
@@ -56,7 +56,9 @@
 		"testcontainers": "^11.11.0",
 		"typescript": "^5.9.3",
 		"typescript-eslint": "^8.48.1",
-		"valibot": "^1.2.0",
 		"vite": "^7.2.6"
+	},
+	"dependencies": {
+		"valibot": "^1.2.0"
 	}
 }
