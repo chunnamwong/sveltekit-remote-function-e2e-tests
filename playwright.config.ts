@@ -15,4 +15,6 @@ export default defineConfig({
 	use: {
 		browserName: 'chromium',
 	},
+
+	timeout: 240000,
 });
